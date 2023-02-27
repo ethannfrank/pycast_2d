@@ -9,7 +9,6 @@ class Ray:
     def __init__(self, pos, angle):
         self.pos = pos
         self.dir = pygame.math.Vector2(math.cos(angle), math.sin(angle))
-        print(angle)
 
     def show(self, window):
         pygame.draw.line(window, WHITE, self.pos, self.pos + self.dir * 10)
